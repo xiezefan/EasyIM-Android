@@ -1,0 +1,14 @@
+{
+  "name": "easyim-server",
+  "version": "0.0.0",
+  "private": false,
+  "dependencies": {
+    "debug": "~2.0.0",
+    "request":"*",
+    "jpush-sdk":"*",
+    "passport":"*",
+    "passport-http":"*",
+    "restify":"*",
+    "redis":""
+  }
+}
