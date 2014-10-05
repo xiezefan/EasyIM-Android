@@ -9,6 +9,6 @@
     "passport":"*",
     "passport-http":"*",
     "restify":"*",
-    "redis":""
+    "redis":"*"
   }
 }

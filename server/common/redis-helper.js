@@ -1,3 +1,4 @@
-/**
- * Created by xiezefan on 2014/10/4.
- */
+var redis = require('redis');
+var Config = require('../config/server-config');
+
+exports.redis = redis.createClient(Config.redisPort, Config.redisHost);
