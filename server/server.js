@@ -6,7 +6,8 @@ var passport = require('passport');
 var Config = require('./config/server-config');
 var Auth = require('./common/auth-helper');
 
-var User = require('./routes/users')
+var User = require('./routes/users');
+var Message = require('./routes/messages');
 
 var server = restify.createServer({
     name: Config.name,
@@ -35,6 +36,8 @@ server.post('/test', passport.authenticate('basic', { session: false }), functio
 
 server.post("/user/register", User.register);
 server.post("/user/login", User.login);
+
+server.post("/message/:group_id/send", passport.authenticate('basic', { session: false}), Message.send);
 
 server.listen(Config.port, function () {
     console.log('%s listening at %s', server.name, server.url);

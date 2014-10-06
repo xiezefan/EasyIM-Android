@@ -1,23 +1,18 @@
-/**
- * Created by xiezefan on 2014/10/4.
- */
-
-var express = require('express');
-
-var router = express.Router();
+var redis = require('redis');
+var Config = require('../config/server-config');
+var Util = require('../common/unit.js');
 
 
+var client = redis.createClient(Config.redisPort, Config.redisHost);
 
-/* GET home page. */
-router.post('/send', function(req, res) {
-    console.log("header: " + JSON.stringify(req.headers));
-    console.log("User: " + req.user);
-    console.log(JSON.stringify(req.body));
+var messages = {
+    send : function(req, res, next) {
+        var reqData = req.body;
+        var user = req.user;
+        console.log(req.params);
+        res.json({code:3000});
+        next();
+    }
+};
 
-    // validate
-
-
-    res.status(200).json({ content: 'success' });
-});
-
-module.exports = router;
+module.exports = messages;
