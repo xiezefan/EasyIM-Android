@@ -8,5 +8,7 @@ var User = schema.define('user', {
 User.validatesUniquenessOf('username', {message: 'username is not unique'});
 
 
-
 module.exports = User;
+
+
+
