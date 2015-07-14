@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar_main"/>
+
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/etInputBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/default_text_color"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/btnSend"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/white"
+            android:text="发送"
+            android:background="@drawable/bg_friend_add_btn"/>
+        <TextView
+            android:id="@+id/btnGallery"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/white"
+            android:text="图库"
+            android:background="@drawable/bg_friend_add_btn"/>
+    </LinearLayout>
+
+    <me.xiezefan.easyim.widget.ResizeRecyclerView
+        android:id="@+id/rvChat"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+</RelativeLayout>

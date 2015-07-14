@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/user_profile_size"
+        android:layout_height="@dimen/user_profile_size"
+        android:src="@drawable/default_user_profile"/>
+
+    <ImageView
+        android:id="@+id/tvContent"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="10"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/temp_image"
+        android:background="@drawable/bg_chat_item_left"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

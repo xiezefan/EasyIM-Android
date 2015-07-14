@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar_main_no_elevation"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:background="#3f51b5"
+        android:layout_height="150dp">
+
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="走着走着，花就开了"/>
+
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_above="@id/tvDescription"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="谢泽帆"/>
+
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_above="@id/tvUsername"
+            android:layout_width="@dimen/user_profile_size"
+            android:layout_height="@dimen/user_profile_size"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/default_user_profile"/>
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_margin="16dp"
+        android:text="聊天"/>
+
+
+</RelativeLayout>
