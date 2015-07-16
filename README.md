@@ -34,7 +34,8 @@ PS:项目中使用了Lambda表达式，所以，请确保安装了JDK1.8及Gradl
 
 ## 效果图
 
-![1]
+![3]
 
-
-[1]:http://7jpp6b.com1.z0.glb.clouddn.com/blog/easyim_all.jpg
+[1]:https://github.com/xiezefan/EasyIM-Server
+[2]:https://github.com/xiezefan/EasyIM-Android
+[3]:http://7jpp6b.com1.z0.glb.clouddn.com/blog/easyim_all.jpg
